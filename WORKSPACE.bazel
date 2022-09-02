@@ -1,0 +1,12 @@
+workspace(name = "test_repo")
+
+load(
+    "@bazel_tools//tools/build_defs/repo:git.bzl",
+    "git_repository",
+)
+
+git_repository(
+    name = "sw_repo",
+    branch = "master",
+    remote = "git@github.com:celkas/bazel-issue-sw.git",
+)

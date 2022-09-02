@@ -1,0 +1,14 @@
+load(
+    "@rules_cc//cc:defs.bzl",
+    "cc_test",
+)
+
+cc_test(
+    name = "mytest",
+    srcs = [
+        "test/test.c",
+    ],
+    deps = [
+        "@sw_repo//:funclib",
+    ],
+)
